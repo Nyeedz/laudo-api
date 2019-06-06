@@ -87,10 +87,6 @@
       "type": "string",
       "unique": true
     },
-    "solicitacoes": {
-      "collection": "solicitacoes",
-      "via": "empresacres"
-    },
     "empresacons": {
       "collection": "empresacon",
       "via": "empresacres"

@@ -6,14 +6,16 @@
     "description": ""
   },
   "options": {
-    "timestamps": true
+    "timestamps": [
+      "createdAt",
+      "updatedAt"
+    ]
   },
   "attributes": {
     "fachada": {
       "model": "file",
       "via": "related",
-      "plugin": "upload",
-      "required": false
+      "plugin": "upload"
     },
     "cep": {
       "default": "",
@@ -47,14 +49,22 @@
       "default": "",
       "type": "json"
     },
-    "solicitacoes": {
-      "collection": "solicitacoes",
-      "via": "vistoria"
-    },
     "user": {
       "model": "user",
       "via": "vistorias",
       "plugin": "users-permissions"
+    },
+    "laudo": {
+      "model": "laudo",
+      "via": "vistoria"
+    },
+    "status": {
+      "enum": [
+        "Em aberto",
+        "Em andamento",
+        "Finalizado"
+      ],
+      "type": "enumeration"
     }
   }
 }

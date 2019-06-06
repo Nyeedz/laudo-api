@@ -84,10 +84,6 @@
       "plugin": "upload",
       "required": false
     },
-    "solicitacoes": {
-      "collection": "solicitacoes",
-      "via": "empresacons"
-    },
     "empresacres": {
       "collection": "empresacre",
       "via": "empresacons",
