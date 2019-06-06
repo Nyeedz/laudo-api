@@ -1,0 +1,25 @@
+{
+  "connection": "default",
+  "collectionName": "",
+  "info": {
+    "name": "itens",
+    "description": ""
+  },
+  "options": {
+    "timestamps": true
+  },
+  "attributes": {
+    "nome": {
+      "type": "string"
+    },
+    "fotos": {
+      "collection": "file",
+      "via": "related",
+      "plugin": "upload"
+    },
+    "ambiente": {
+      "model": "ambiente",
+      "via": "itens"
+    }
+  }
+}

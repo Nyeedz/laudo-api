@@ -1,0 +1,52 @@
+{
+  "routes": [
+    {
+      "method": "GET",
+      "path": "/itens",
+      "handler": "Itens.find",
+      "config": {
+        "policies": []
+      }
+    },
+    {
+      "method": "GET",
+      "path": "/itens/count",
+      "handler": "Itens.count",
+      "config": {
+        "policies": []
+      }
+    },
+    {
+      "method": "GET",
+      "path": "/itens/:_id",
+      "handler": "Itens.findOne",
+      "config": {
+        "policies": []
+      }
+    },
+    {
+      "method": "POST",
+      "path": "/itens",
+      "handler": "Itens.create",
+      "config": {
+        "policies": []
+      }
+    },
+    {
+      "method": "PUT",
+      "path": "/itens/:_id",
+      "handler": "Itens.update",
+      "config": {
+        "policies": []
+      }
+    },
+    {
+      "method": "DELETE",
+      "path": "/itens/:_id",
+      "handler": "Itens.delete",
+      "config": {
+        "policies": []
+      }
+    }
+  ]
+}

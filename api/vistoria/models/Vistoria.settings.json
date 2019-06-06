@@ -55,14 +55,6 @@
       "model": "user",
       "via": "vistorias",
       "plugin": "users-permissions"
-    },
-    "ambiente": {
-      "collection": "ambiente",
-      "via": "vistorias"
-    },
-    "laudo": {
-      "model": "laudo",
-      "via": "vistoria"
     }
   }
 }

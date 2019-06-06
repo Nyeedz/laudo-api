@@ -26,6 +26,10 @@
     "vistoria": {
       "model": "vistoria",
       "via": "solicitacoes"
+    },
+    "laudo": {
+      "model": "laudo",
+      "via": "solicitacao"
     }
   }
 }

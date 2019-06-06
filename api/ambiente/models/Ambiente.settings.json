@@ -6,21 +6,27 @@
     "description": ""
   },
   "options": {
-    "timestamps": true
+    "timestamps": [
+      "createdAt",
+      "updatedAt"
+    ]
   },
   "attributes": {
     "nome": {
       "default": "",
       "type": "string"
     },
-    "fotos": {
-      "collection": "file",
+    "fotoFachada": {
+      "model": "file",
       "via": "related",
-      "plugin": "upload",
-      "required": false
+      "plugin": "upload"
     },
-    "vistorias": {
-      "model": "vistoria",
+    "laudo": {
+      "model": "laudo",
+      "via": "ambientes"
+    },
+    "itens": {
+      "collection": "itens",
       "via": "ambiente"
     }
   }

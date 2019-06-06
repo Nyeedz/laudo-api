@@ -1,16 +1,23 @@
 {
   "connection": "default",
-  "collectionName": "",
+  "collectionName": "laudo",
   "info": {
     "name": "laudo",
     "description": ""
   },
   "options": {
-    "timestamps": true
+    "timestamps": [
+      "createdAt",
+      "updatedAt"
+    ]
   },
   "attributes": {
-    "vistoria": {
-      "model": "vistoria",
+    "solicitacao": {
+      "model": "solicitacoes",
+      "via": "laudo"
+    },
+    "ambientes": {
+      "collection": "ambiente",
       "via": "laudo"
     }
   }
