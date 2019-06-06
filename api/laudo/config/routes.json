@@ -1,0 +1,52 @@
+{
+  "routes": [
+    {
+      "method": "GET",
+      "path": "/laudos",
+      "handler": "Laudo.find",
+      "config": {
+        "policies": []
+      }
+    },
+    {
+      "method": "GET",
+      "path": "/laudos/count",
+      "handler": "Laudo.count",
+      "config": {
+        "policies": []
+      }
+    },
+    {
+      "method": "GET",
+      "path": "/laudos/:_id",
+      "handler": "Laudo.findOne",
+      "config": {
+        "policies": []
+      }
+    },
+    {
+      "method": "POST",
+      "path": "/laudos",
+      "handler": "Laudo.create",
+      "config": {
+        "policies": []
+      }
+    },
+    {
+      "method": "PUT",
+      "path": "/laudos/:_id",
+      "handler": "Laudo.update",
+      "config": {
+        "policies": []
+      }
+    },
+    {
+      "method": "DELETE",
+      "path": "/laudos/:_id",
+      "handler": "Laudo.destroy",
+      "config": {
+        "policies": []
+      }
+    }
+  ]
+}

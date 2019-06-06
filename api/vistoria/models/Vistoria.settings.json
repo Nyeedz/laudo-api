@@ -1,0 +1,68 @@
+{
+  "connection": "default",
+  "collectionName": "vistoria",
+  "info": {
+    "name": "vistoria",
+    "description": ""
+  },
+  "options": {
+    "timestamps": true
+  },
+  "attributes": {
+    "fachada": {
+      "model": "file",
+      "via": "related",
+      "plugin": "upload",
+      "required": false
+    },
+    "cep": {
+      "default": "",
+      "type": "string"
+    },
+    "endereco": {
+      "default": "",
+      "type": "string"
+    },
+    "cidade": {
+      "default": "",
+      "type": "string"
+    },
+    "bairro": {
+      "default": "",
+      "type": "string"
+    },
+    "numero": {
+      "default": "",
+      "type": "integer"
+    },
+    "tipos_laudo": {
+      "default": "",
+      "type": "string"
+    },
+    "visita": {
+      "default": "",
+      "type": "date"
+    },
+    "partes": {
+      "default": "",
+      "type": "json"
+    },
+    "solicitacoes": {
+      "collection": "solicitacoes",
+      "via": "vistoria"
+    },
+    "user": {
+      "model": "user",
+      "via": "vistorias",
+      "plugin": "users-permissions"
+    },
+    "ambiente": {
+      "collection": "ambiente",
+      "via": "vistorias"
+    },
+    "laudo": {
+      "model": "laudo",
+      "via": "vistoria"
+    }
+  }
+}

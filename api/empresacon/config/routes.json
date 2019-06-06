@@ -1,0 +1,52 @@
+{
+  "routes": [
+    {
+      "method": "GET",
+      "path": "/empresacons",
+      "handler": "Empresacon.find",
+      "config": {
+        "policies": []
+      }
+    },
+    {
+      "method": "GET",
+      "path": "/empresacons/count",
+      "handler": "Empresacon.count",
+      "config": {
+        "policies": []
+      }
+    },
+    {
+      "method": "GET",
+      "path": "/empresacons/:_id",
+      "handler": "Empresacon.findOne",
+      "config": {
+        "policies": []
+      }
+    },
+    {
+      "method": "POST",
+      "path": "/empresacons",
+      "handler": "Empresacon.create",
+      "config": {
+        "policies": []
+      }
+    },
+    {
+      "method": "PUT",
+      "path": "/empresacons/:_id",
+      "handler": "Empresacon.update",
+      "config": {
+        "policies": []
+      }
+    },
+    {
+      "method": "DELETE",
+      "path": "/empresacons/:_id",
+      "handler": "Empresacon.destroy",
+      "config": {
+        "policies": []
+      }
+    }
+  ]
+}

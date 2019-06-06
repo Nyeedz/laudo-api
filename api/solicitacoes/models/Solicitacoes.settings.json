@@ -1,0 +1,31 @@
+{
+  "connection": "default",
+  "collectionName": "",
+  "info": {
+    "name": "solicitacoes",
+    "description": ""
+  },
+  "options": {
+    "timestamps": true
+  },
+  "attributes": {
+    "empresacons": {
+      "collection": "empresacon",
+      "dominant": true,
+      "via": "solicitacoes"
+    },
+    "empresacres": {
+      "collection": "empresacre",
+      "via": "solicitacoes",
+      "dominant": true
+    },
+    "status": {
+      "default": "",
+      "type": "json"
+    },
+    "vistoria": {
+      "model": "vistoria",
+      "via": "solicitacoes"
+    }
+  }
+}

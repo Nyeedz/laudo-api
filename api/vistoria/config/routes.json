@@ -1,0 +1,52 @@
+{
+  "routes": [
+    {
+      "method": "GET",
+      "path": "/vistorias",
+      "handler": "Vistoria.find",
+      "config": {
+        "policies": []
+      }
+    },
+    {
+      "method": "GET",
+      "path": "/vistorias/count",
+      "handler": "Vistoria.count",
+      "config": {
+        "policies": []
+      }
+    },
+    {
+      "method": "GET",
+      "path": "/vistorias/:_id",
+      "handler": "Vistoria.findOne",
+      "config": {
+        "policies": []
+      }
+    },
+    {
+      "method": "POST",
+      "path": "/vistorias",
+      "handler": "Vistoria.create",
+      "config": {
+        "policies": []
+      }
+    },
+    {
+      "method": "PUT",
+      "path": "/vistorias/:_id",
+      "handler": "Vistoria.update",
+      "config": {
+        "policies": []
+      }
+    },
+    {
+      "method": "DELETE",
+      "path": "/vistorias/:_id",
+      "handler": "Vistoria.destroy",
+      "config": {
+        "policies": []
+      }
+    }
+  ]
+}

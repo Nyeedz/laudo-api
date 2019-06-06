@@ -1,0 +1,99 @@
+{
+  "connection": "default",
+  "collectionName": "empresacre",
+  "info": {
+    "name": "empresacre",
+    "description": ""
+  },
+  "options": {
+    "timestamps": true
+  },
+  "attributes": {
+    "razao_social": {
+      "default": "",
+      "type": "string"
+    },
+    "nome_fantasia": {
+      "default": "",
+      "type": "string",
+      "required": true
+    },
+    "inscricao_estadual": {
+      "default": "",
+      "type": "string"
+    },
+    "inscricao_municipal": {
+      "default": "",
+      "type": "string"
+    },
+    "cep": {
+      "default": "",
+      "type": "string"
+    },
+    "endereco": {
+      "default": "",
+      "type": "string"
+    },
+    "email": {
+      "default": "",
+      "type": "email",
+      "unique": true
+    },
+    "numero": {
+      "default": "",
+      "type": "integer"
+    },
+    "bairro": {
+      "default": "",
+      "type": "string"
+    },
+    "cidade": {
+      "default": "",
+      "type": "string"
+    },
+    "complemento": {
+      "default": "",
+      "type": "string"
+    },
+    "estado": {
+      "default": "",
+      "type": "string"
+    },
+    "telefone": {
+      "default": "",
+      "type": "string"
+    },
+    "contato_nome": {
+      "default": "",
+      "type": "string"
+    },
+    "contato_telefone": {
+      "default": "",
+      "type": "string"
+    },
+    "logotipo": {
+      "model": "file",
+      "via": "related",
+      "plugin": "upload",
+      "required": false
+    },
+    "user": {
+      "model": "user",
+      "via": "empresacres",
+      "plugin": "users-permissions"
+    },
+    "cnpj": {
+      "default": "",
+      "type": "string",
+      "unique": true
+    },
+    "solicitacoes": {
+      "collection": "solicitacoes",
+      "via": "empresacres"
+    },
+    "empresacons": {
+      "collection": "empresacon",
+      "via": "empresacres"
+    }
+  }
+}

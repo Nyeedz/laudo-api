@@ -1,0 +1,52 @@
+{
+  "routes": [
+    {
+      "method": "GET",
+      "path": "/empresacres",
+      "handler": "Empresacre.find",
+      "config": {
+        "policies": []
+      }
+    },
+    {
+      "method": "GET",
+      "path": "/empresacres/count",
+      "handler": "Empresacre.count",
+      "config": {
+        "policies": []
+      }
+    },
+    {
+      "method": "GET",
+      "path": "/empresacres/:_id",
+      "handler": "Empresacre.findOne",
+      "config": {
+        "policies": []
+      }
+    },
+    {
+      "method": "POST",
+      "path": "/empresacres",
+      "handler": "Empresacre.create",
+      "config": {
+        "policies": []
+      }
+    },
+    {
+      "method": "PUT",
+      "path": "/empresacres/:_id",
+      "handler": "Empresacre.update",
+      "config": {
+        "policies": []
+      }
+    },
+    {
+      "method": "DELETE",
+      "path": "/empresacres/:_id",
+      "handler": "Empresacre.destroy",
+      "config": {
+        "policies": []
+      }
+    }
+  ]
+}
