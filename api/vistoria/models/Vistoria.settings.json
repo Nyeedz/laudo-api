@@ -49,11 +49,6 @@
       "default": "",
       "type": "json"
     },
-    "user": {
-      "model": "user",
-      "via": "vistorias",
-      "plugin": "users-permissions"
-    },
     "laudo": {
       "model": "laudo",
       "via": "vistoria"
@@ -65,6 +60,11 @@
         "Finalizado"
       ],
       "type": "enumeration"
+    },
+    "user": {
+      "model": "user",
+      "via": "vistorias",
+      "plugin": "users-permissions"
     }
   }
 }

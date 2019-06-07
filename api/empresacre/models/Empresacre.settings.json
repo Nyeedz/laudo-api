@@ -77,11 +77,6 @@
       "plugin": "upload",
       "required": false
     },
-    "user": {
-      "model": "user",
-      "via": "empresacres",
-      "plugin": "users-permissions"
-    },
     "cnpj": {
       "default": "",
       "type": "string",
@@ -90,6 +85,11 @@
     "empresacons": {
       "collection": "empresacon",
       "via": "empresacres"
+    },
+    "user": {
+      "model": "user",
+      "via": "empresacres",
+      "plugin": "users-permissions"
     }
   }
 }

@@ -73,11 +73,6 @@
       "default": "",
       "type": "string"
     },
-    "user": {
-      "model": "user",
-      "via": "empresacons",
-      "plugin": "users-permissions"
-    },
     "logotipo": {
       "model": "file",
       "via": "related",
@@ -88,6 +83,11 @@
       "collection": "empresacre",
       "via": "empresacons",
       "dominant": true
+    },
+    "user": {
+      "model": "user",
+      "via": "empresacons",
+      "plugin": "users-permissions"
     }
   }
 }
