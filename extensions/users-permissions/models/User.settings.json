@@ -121,6 +121,15 @@
     "vistorias": {
       "collection": "vistoria",
       "via": "user"
+    },
+    "vistoriador": {
+      "type": "boolean"
+    },
+    "credenciado": {
+      "type": "boolean"
+    },
+    "contratante": {
+      "type": "boolean"
     }
   }
 }
