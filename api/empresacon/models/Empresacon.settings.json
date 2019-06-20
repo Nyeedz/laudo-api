@@ -6,7 +6,10 @@
     "description": ""
   },
   "options": {
-    "timestamps": true
+    "timestamps": [
+      "createdAt",
+      "updatedAt"
+    ]
   },
   "attributes": {
     "razao_social": {
@@ -36,10 +39,6 @@
     "endereco": {
       "default": "",
       "type": "string"
-    },
-    "email": {
-      "default": "",
-      "type": "email"
     },
     "numero": {
       "default": "",
@@ -76,18 +75,20 @@
     "logotipo": {
       "model": "file",
       "via": "related",
-      "plugin": "upload",
-      "required": false
-    },
-    "empresacres": {
-      "collection": "empresacre",
-      "via": "empresacons",
-      "dominant": true
+      "plugin": "upload"
     },
     "user": {
       "model": "user",
       "via": "empresacons",
       "plugin": "users-permissions"
+    },
+    "email": {
+      "type": "email"
+    },
+    "empresacres": {
+      "collection": "empresacre",
+      "dominant": true,
+      "via": "empresacons"
     }
   }
 }

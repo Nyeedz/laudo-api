@@ -1,1 +1,1 @@
-{"options":{},"indexes":[{"v":2,"key":{"_id":1},"name":"_id_","ns":"laudoapi.empresacre"},{"v":2,"unique":true,"key":{"email":1},"name":"email_1","ns":"laudoapi.empresacre","background":true},{"v":2,"unique":true,"key":{"cnpj":1},"name":"cnpj_1","ns":"laudoapi.empresacre","background":true}],"uuid":"afb1ce3902574da6a164129592ba4763"}
+{"options":{},"indexes":[{"v":2,"key":{"_id":1},"name":"_id_","ns":"laudoapi.empresacre"}],"uuid":"342b47ad0e8343fd98f0fcd13d568aed"}

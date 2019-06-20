@@ -95,14 +95,6 @@
       "default": "",
       "type": "string"
     },
-    "empresacons": {
-      "collection": "empresacon",
-      "via": "user"
-    },
-    "empresacres": {
-      "collection": "empresacre",
-      "via": "user"
-    },
     "telefone": {
       "default": "",
       "type": "string"
@@ -130,6 +122,14 @@
     },
     "contratante": {
       "type": "boolean"
+    },
+    "empresacons": {
+      "collection": "empresacon",
+      "via": "user"
+    },
+    "empresacres": {
+      "collection": "empresacre",
+      "via": "user"
     }
   }
 }

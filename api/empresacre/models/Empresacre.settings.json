@@ -6,7 +6,10 @@
     "description": ""
   },
   "options": {
-    "timestamps": true
+    "timestamps": [
+      "createdAt",
+      "updatedAt"
+    ]
   },
   "attributes": {
     "razao_social": {
@@ -15,8 +18,11 @@
     },
     "nome_fantasia": {
       "default": "",
-      "type": "string",
-      "required": true
+      "type": "string"
+    },
+    "cnpj": {
+      "default": "",
+      "type": "string"
     },
     "inscricao_estadual": {
       "default": "",
@@ -33,11 +39,6 @@
     "endereco": {
       "default": "",
       "type": "string"
-    },
-    "email": {
-      "default": "",
-      "type": "email",
-      "unique": true
     },
     "numero": {
       "default": "",
@@ -63,33 +64,30 @@
       "default": "",
       "type": "string"
     },
-    "contato_nome": {
+    "contato_telefone": {
       "default": "",
       "type": "string"
     },
-    "contato_telefone": {
+    "contato_nome": {
       "default": "",
       "type": "string"
     },
     "logotipo": {
       "model": "file",
       "via": "related",
-      "plugin": "upload",
-      "required": false
-    },
-    "cnpj": {
-      "default": "",
-      "type": "string",
-      "unique": true
-    },
-    "empresacons": {
-      "collection": "empresacon",
-      "via": "empresacres"
+      "plugin": "upload"
     },
     "user": {
       "model": "user",
       "via": "empresacres",
       "plugin": "users-permissions"
+    },
+    "empresacons": {
+      "collection": "empresacon",
+      "via": "empresacres"
+    },
+    "email": {
+      "type": "email"
     }
   }
 }
