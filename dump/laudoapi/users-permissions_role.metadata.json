@@ -1,1 +1,1 @@
-{"options":{},"indexes":[{"v":2,"key":{"_id":1},"name":"_id_","ns":"laudoapi.users-permissions_role"},{"v":2,"unique":true,"key":{"type":1},"name":"type_1","ns":"laudoapi.users-permissions_role","background":true}],"uuid":"1b7819428f2842cd8e97db0d5ce62dcf"}
+{"options":{},"indexes":[{"v":2,"key":{"_id":1},"name":"_id_","ns":"laudoapi.users-permissions_role"},{"v":2,"unique":true,"key":{"type":1},"name":"type_1","ns":"laudoapi.users-permissions_role","background":true}],"uuid":"1901b2f8b73c4209a52c9f7fe8840207"}
