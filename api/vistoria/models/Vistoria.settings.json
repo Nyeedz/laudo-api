@@ -65,6 +65,12 @@
       "model": "user",
       "via": "vistorias",
       "plugin": "users-permissions"
+    },
+    "estado": {
+      "type": "string"
+    },
+    "complemento": {
+      "type": "string"
     }
   }
 }

@@ -110,10 +110,6 @@
     "admin": {
       "type": "boolean"
     },
-    "vistorias": {
-      "collection": "vistoria",
-      "via": "user"
-    },
     "vistoriador": {
       "type": "boolean"
     },
@@ -129,6 +125,10 @@
     },
     "empresacres": {
       "collection": "empresacre",
+      "via": "user"
+    },
+    "vistorias": {
+      "collection": "vistoria",
       "via": "user"
     }
   }
