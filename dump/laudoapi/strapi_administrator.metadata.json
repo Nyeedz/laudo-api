@@ -1,1 +1,1 @@
-{"options":{},"indexes":[{"v":2,"key":{"_id":1},"name":"_id_","ns":"laudoapi.strapi_administrator"},{"v":2,"unique":true,"key":{"username":1},"name":"username_1","ns":"laudoapi.strapi_administrator","background":true}],"uuid":"1d696afe27ea4f19b229d66ce3c58461"}
+{"options":{},"indexes":[{"v":2,"key":{"_id":1},"name":"_id_","ns":"laudoapi.strapi_administrator"},{"v":2,"unique":true,"key":{"username":1},"name":"username_1","ns":"laudoapi.strapi_administrator","background":true}],"uuid":"e3c708038501451f917c821b68c95d47"}
