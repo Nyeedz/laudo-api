@@ -12,7 +12,7 @@
     ]
   },
   "attributes": {
-    "fachada": {
+    "fotoCaracterizacao": {
       "model": "file",
       "via": "related",
       "plugin": "upload"

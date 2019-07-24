@@ -28,6 +28,9 @@
     "itens": {
       "collection": "itens",
       "via": "ambiente"
+    },
+    "descricao": {
+      "type": "string"
     }
   }
 }
