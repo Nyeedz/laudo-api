@@ -12,12 +12,12 @@
     ]
   },
   "attributes": {
-    "ambientes": {
-      "collection": "ambiente",
-      "via": "laudo"
-    },
     "vistoria": {
       "model": "vistoria",
+      "via": "laudo"
+    },
+    "ambientes": {
+      "collection": "ambiente",
       "via": "laudo"
     }
   }
