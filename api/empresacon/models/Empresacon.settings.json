@@ -77,11 +77,6 @@
       "via": "related",
       "plugin": "upload"
     },
-    "user": {
-      "model": "user",
-      "via": "empresacons",
-      "plugin": "users-permissions"
-    },
     "email": {
       "type": "email"
     },
@@ -89,6 +84,11 @@
       "collection": "empresacre",
       "dominant": true,
       "via": "empresacons"
+    },
+    "user": {
+      "model": "user",
+      "via": "empresacons",
+      "plugin": "users-permissions"
     }
   }
 }

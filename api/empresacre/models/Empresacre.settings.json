@@ -77,17 +77,17 @@
       "via": "related",
       "plugin": "upload"
     },
-    "user": {
-      "model": "user",
-      "via": "empresacres",
-      "plugin": "users-permissions"
-    },
     "empresacons": {
       "collection": "empresacon",
       "via": "empresacres"
     },
     "email": {
       "type": "email"
+    },
+    "user": {
+      "model": "user",
+      "via": "empresacres",
+      "plugin": "users-permissions"
     }
   }
 }

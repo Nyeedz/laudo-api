@@ -110,15 +110,6 @@
     "admin": {
       "type": "boolean"
     },
-    "vistoriador": {
-      "type": "boolean"
-    },
-    "credenciado": {
-      "type": "boolean"
-    },
-    "contratante": {
-      "type": "boolean"
-    },
     "empresacons": {
       "collection": "empresacon",
       "via": "user"
@@ -130,6 +121,14 @@
     "vistorias": {
       "collection": "vistoria",
       "via": "user"
+    },
+    "tipoUser": {
+      "enum": [
+        "Vistoriador",
+        "Credenciado",
+        "Contratante"
+      ],
+      "type": "enumeration"
     }
   }
 }
